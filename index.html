@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Countdown</title>
+	<title>Quiz</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<form action="" method="post">
-  <label for="Xmas" style="color: #8A0808;">Xmas:</label>
-  <input type="date" id="Xmas" name="Xmas">
-  <input type="submit">
-</form>
+	<div class="container" id="quiz">
+	<div class="header">
+	<h2 id="question">Question</h2>
+   <ul>
+   	<li><input type="radio" name="answer" id="a" class="answer"><label id="a_text"></label></li>
+    <li><input type="radio" name="answer" id="b" class="answer"><label id="b_text"></label></li>
+    <li><input type="radio" name="answer" id="c" class="answer"><label id="c_text"></label></li>
+   	<li><input type="radio" name="answer" id="d" class="answer"><label id="d_text"></label></li>
+    
 
-	<h1>Until Christmas 2021</h1>
-	<div class="container">
-		<div class="count-el  days">
-			<p class="text" id="days">0</p>
-			<span>Days</span>
-        </div>
-        <div class="count-el  hours">
-			<p class="text" id="hours">0</p>
-			<span>Hours</span>
-        </div>
-        <div class="count-el  minutes">
-			<p class="text" id="minutes">0</p>
-			<span>Minutes</span>
-        </div>
-        <div class="count-el  seconds">
-			<p class="text" id="seconds">0</p>
-			<span>Seconds</span>
-        </div>
-        
-	</div>
 
-</body>
+
+   </ul>
+
+</div>
+<button id="submit">Submit</button>
+
+   </div>
 <script src="script.js"></script>
+</body>
 </html>
